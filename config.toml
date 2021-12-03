@@ -1,0 +1,11 @@
+[module]
+[[module.mounts]]
+# Workaround for https://github.com/gohugoio/hugo/issues/6945
+source = "assets/vendor/bootstrap/scss/_vendor"
+target = "assets/vendor/bootstrap/scss/vendor"
+
+[[module.imports]]
+path="github.com/twbs/bootstrap"
+[[module.imports.mounts]]
+source = "scss"
+target = "assets/vendor/bootstrap/scss"
